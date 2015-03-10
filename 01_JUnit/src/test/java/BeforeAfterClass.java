@@ -5,6 +5,7 @@ import org.junit.*;
  */
 public class BeforeAfterClass {
 
+
     @BeforeClass
     public static void beforeClass() {
         System.out.println("BeforeAfterClass.beforeClass");

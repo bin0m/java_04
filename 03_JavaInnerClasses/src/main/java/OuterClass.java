@@ -1,6 +1,9 @@
 import javax.swing.*;
 import java.awt.event.ActionListener;
 
+// Вложенные классы в Java
+// -----------------------
+
 /**
  * Внешний класс
  */
@@ -46,7 +49,7 @@ public class OuterClass {
         // При определении анонимного класса применен полиморфизм - переменная listener
         // содержит экземпляр анонимного класса, реализующего существующий
         // интерфейс ActionListener
-        int localVar = 2;
+        final int localVar = 2;
         ActionListener listener = new ActionListener() {
             @Override
             public void actionPerformed(java.awt.event.ActionEvent actionEvent) {

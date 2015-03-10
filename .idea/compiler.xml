@@ -29,8 +29,8 @@
         <module name="04_JSP" />
         <module name="06_maven" />
         <module name="06_maven2" />
+        <module name="webviewbrowser" />
       </profile>
     </annotationProcessing>
   </component>
 </project>
-

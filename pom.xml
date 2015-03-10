@@ -16,6 +16,7 @@
         <module>03_JavaInnerClasses</module>
         <module>04_JSP</module>
         <module>06_maven</module>
+        <module>WebViewBrowser</module>
     </modules>
 
     <build>

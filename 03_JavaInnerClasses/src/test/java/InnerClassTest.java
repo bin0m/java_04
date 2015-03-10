@@ -15,6 +15,8 @@ public class InnerClassTest {
     @Test
     public void testAnonymClasses() {
 
+        // Анонимный класс
+        //-->
         MyInterface myInterface = new MyInterface() {
             @Override
             public void myMethod() {
@@ -23,5 +25,6 @@ public class InnerClassTest {
         };
 
         myInterface.myMethod();
+        //<--
     }
 }

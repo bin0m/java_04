@@ -7,8 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/03_JavaInnerClasses/03_JavaInnerClasses.iml" filepath="$PROJECT_DIR$/03_JavaInnerClasses/03_JavaInnerClasses.iml" />
       <module fileurl="file://$PROJECT_DIR$/04_JSP/04_JSP.iml" filepath="$PROJECT_DIR$/04_JSP/04_JSP.iml" />
       <module fileurl="file://$PROJECT_DIR$/06_maven/06_maven.iml" filepath="$PROJECT_DIR$/06_maven/06_maven.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_04.iml" filepath="$PROJECT_DIR$/lesson_04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebViewBrowser/WebViewBrowser.iml" filepath="$PROJECT_DIR$/WebViewBrowser/WebViewBrowser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_04.iml" filepath="$PROJECT_DIR$/java_04.iml" />
     </modules>
   </component>
 </project>
-
