@@ -17,6 +17,7 @@
         <module>04_JSP</module>
         <module>06_maven</module>
         <module>WebViewBrowser</module>
+        <module>00_Annotations</module>
     </modules>
 
     <build>

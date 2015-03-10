@@ -26,12 +26,13 @@ public class BeforeAfterClass {
         System.out.println("BeforeAfterClass.after");
     }
 
+    //
     @Test
     public void test1() {
         System.out.println("BeforeAfterClass.test1");
     }
 
-    @Test
+    @Test(expected = Exception.class)
     public void test2() {
         System.out.println("BeforeAfterClass.test2");
     }

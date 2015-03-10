@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/00_Annotations/00_Annotations.iml" filepath="$PROJECT_DIR$/00_Annotations/00_Annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/01_JUnit/01_JUnit.iml" filepath="$PROJECT_DIR$/01_JUnit/01_JUnit.iml" />
       <module fileurl="file://$PROJECT_DIR$/02_JUnit3/02_JUnit3.iml" filepath="$PROJECT_DIR$/02_JUnit3/02_JUnit3.iml" />
       <module fileurl="file://$PROJECT_DIR$/03_JavaInnerClasses/03_JavaInnerClasses.iml" filepath="$PROJECT_DIR$/03_JavaInnerClasses/03_JavaInnerClasses.iml" />

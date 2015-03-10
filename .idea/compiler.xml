@@ -22,6 +22,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="00_Annotations" />
         <module name="01_JUnit" />
         <module name="02_JUnit3" />
         <module name="03_JavaInnerClass" />
@@ -29,8 +30,12 @@
         <module name="04_JSP" />
         <module name="06_maven" />
         <module name="06_maven2" />
+        <module name="WebViewBrowser" />
         <module name="webviewbrowser" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="00_Annotations" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

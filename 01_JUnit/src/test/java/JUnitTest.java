@@ -82,8 +82,8 @@ public class JUnitTest extends Assert {
         System.out.println("x = " + x);
     }
 
-    @Ignore // Отключаем тест (например, чтобы исправить его в когда-нибудь в будущем)
-    @Test(timeout = 1000) // 1000 миллисекунд = 1 секунда
+    //@Ignore // Отключаем тест (например, чтобы исправить его в когда-нибудь в будущем)
+    @Test //(timeout = 1000) // 1000 миллисекунд = 1 секунда
     public void infinity() {
         while (true) ;
     }
