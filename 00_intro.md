@@ -60,6 +60,7 @@ maven
 Установка и настройка
 ---------------------
 * Загрузить: http://maven.apache.org/download.cgi
+* Добавить путь к **mvn.bat** в PATH
 * **M2_HOME** на каталог c **maven**: M2_HOME=C:\apache-maven-3.2.5
 
 Центральный репозиторий Maven
