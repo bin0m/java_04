@@ -15,6 +15,7 @@ String tableName(){
 }
 Подключить все методы: assertEquals
 import static org.junit.Assert.*;
+
 ﻿Системы сборки Java
 ===================
 
@@ -181,6 +182,7 @@ gradle
 * Пакет java.util
 
 
+
 Модульное тестирование JUnit4
 =============================
 
@@ -198,6 +200,7 @@ gradle
 Пишем что-то в файл
 @After
 ...
+
 Внутренние классы Java
 ======================
 
@@ -232,6 +235,7 @@ LocalInnerClass inner; // Ошибка компиляции: локальные 
 
         myInterface.myMethod();
 ```
+
 Tomcat
 ======
 
