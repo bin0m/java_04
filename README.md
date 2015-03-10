@@ -2,6 +2,20 @@
 
 .\00_Annotations\src\main\java\Column.java
 
+Аннотация для столбца (поля) в базе данных
+``` java
+public @interface Column {
+    String value();
+
+    // Максимальное количество символов
+    // По-умолчанию: 0
+    int maxLen() default 0;
+
+    // Свойства аннотаций могут быть
+    // любых примитивных типов + String + enum
+    boolean isPassword() default false;
+}
+```
 .\00_Annotations\src\main\java\PrimaryKey.java
 
 Является ли поле первичным ключом?
