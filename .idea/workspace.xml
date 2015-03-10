@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d4d99c7-6198-4158-86ec-8d3efdfd7a3e" name="Default" comment="Настройка запуска Tomcat">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/04_JSP/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/04_JSP/src/main/webapp/index.jsp" />
+    <list default="true" id="6d4d99c7-6198-4158-86ec-8d3efdfd7a3e" name="Default" comment="Первое JSP приложение">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/04_JSP/README.md" afterPath="$PROJECT_DIR$/04_JSP/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lesson_04.iws" />
@@ -61,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/04_JSP/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74689823" vertical-offset="56" max-vertical-offset="697">
+            <state vertical-scroll-proportion="-11.576923" vertical-offset="56" max-vertical-offset="697">
               <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
@@ -103,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/04_JSP/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0357144" vertical-offset="0" max-vertical-offset="204">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.43890274" vertical-offset="0" max-vertical-offset="401">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -167,8 +167,8 @@
         <option value="$PROJECT_DIR$/00_Annotations/src/test/java/UserTest.java" />
         <option value="$PROJECT_DIR$/00_Annotations/pom.xml" />
         <option value="$PROJECT_DIR$/00_Annotations/src/main/java/User.java" />
-        <option value="$PROJECT_DIR$/04_JSP/README.md" />
         <option value="$PROJECT_DIR$/04_JSP/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/04_JSP/README.md" />
       </list>
     </option>
   </component>
@@ -808,7 +808,7 @@
       <workItem from="1416594555147" duration="73000" />
       <workItem from="1416600612598" duration="14000" />
       <workItem from="1426001941775" duration="414000" />
-      <workItem from="1426005443946" duration="5527000" />
+      <workItem from="1426005443946" duration="5619000" />
     </task>
     <task id="LOCAL-00001" summary="Настройка запуска Tomcat">
       <created>1426010752658</created>
@@ -816,11 +816,17 @@
       <option name="project" value="LOCAL" />
       <updated>1426010752658</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Первое JSP приложение">
+      <created>1426011135176</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1426011135176</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12871000" />
+    <option name="totallyTimeSpent" value="12963000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
@@ -877,7 +883,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Настройка запуска Tomcat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Настройка запуска Tomcat" />
+    <MESSAGE value="Первое JSP приложение" />
+    <option name="LAST_COMMIT_MESSAGE" value="Первое JSP приложение" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1291,23 +1298,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/04_JSP/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.576923" vertical-offset="56" max-vertical-offset="697">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/04_JSP/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0357144" vertical-offset="0" max-vertical-offset="204">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.43890274" vertical-offset="0" max-vertical-offset="401">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04_JSP/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74689823" vertical-offset="56" max-vertical-offset="697">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
   </component>

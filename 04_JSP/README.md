@@ -1,6 +1,8 @@
 Tomcat
 ======
 
-http://tomcat.apache.org/
+* Скачать: http://tomcat.apache.org/
+* Распаковать в папку
+* Запуск: **catalina.bat run**
 
 
