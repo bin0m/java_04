@@ -33,10 +33,26 @@ public @interface PrimaryKey {
 Значение "без имени" называется value()
 .\00_Annotations\src\main\java\User.java
 
-users
-String tableName(){
+Использование своих аннотаций
+``` java
+// users
+@TableName("main_users")
+public class User {
+
+    @PrimaryKey
+    @Column("id")
+    public int id;
+
+    @Column(value = "name", maxLen = 20, isPassword = false)
+    public String name;
+
+
+//    String tableName(){
+//
+//    }
 
 }
+```
 .\00_Annotations\src\test\java\UserTest.java
 
 Подключить все методы: assertEquals

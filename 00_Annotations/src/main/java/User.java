@@ -1,6 +1,5 @@
-/**
- *
- */
+// Использование своих аннотаций
+//-->
 // users
 @TableName("main_users")
 public class User {
@@ -18,3 +17,4 @@ public class User {
 //    }
 
 }
+//<--
