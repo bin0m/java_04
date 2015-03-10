@@ -15,6 +15,6 @@ public class UserTest extends Assert {
         Class userClass = user.getClass();
         TableName tableName = (TableName) userClass.getAnnotation(TableName.class);
         assertNotNull(tableName);
-        assertEquals("users", tableName.value());
+        assertEquals("main_users", tableName.value());
     }
 }
