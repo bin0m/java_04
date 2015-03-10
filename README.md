@@ -1,20 +1,34 @@
+.\00_Annotations\pom.xml
+
+.\00_Annotations\src\main\java\Column.java
+
+.\00_Annotations\src\main\java\PrimaryKey.java
+
 Является ли поле первичным ключом?
 ``` java
 @Retention(RetentionPolicy.RUNTIME)
 public @interface PrimaryKey {
 }
 ```
+.\00_Annotations\src\main\java\TableName.java
+
 Объявление аннотации
 --------------------
 @Retention - служебная аннотация, которая
 задаёт область видимости аннотаций
 Значение "без имени" называется value()
+.\00_Annotations\src\main\java\User.java
+
 users
 String tableName(){
 
 }
+.\00_Annotations\src\test\java\UserTest.java
+
 Подключить все методы: assertEquals
 import static org.junit.Assert.*;
+.\00_intro.md
+
 
 ﻿Системы сборки Java
 ===================
@@ -182,6 +196,8 @@ gradle
 * Пакет java.util
 
 
+.\01_JUnit\README.md
+
 
 Модульное тестирование JUnit4
 =============================
@@ -192,14 +208,36 @@ gradle
 Основная: @Test - помечаем все "тестовые" методы (каждый метод - тест)
 
 
+.\01_JUnit\pom.xml
+
+.\01_JUnit\src\main\java\MyArray.java
+
+.\01_JUnit\src\test\java\BeforeAfterClass.java
+
+
+.\01_JUnit\src\test\java\Calc.java
+
+.\01_JUnit\src\test\java\JUnitCheckException.java
+
+.\01_JUnit\src\test\java\JUnitTest.java
 
 Если в тестируемом коде мы ожимдаем исключение (исключение сообщает об ощибке),
 то используем параметр expected
 @Ignore // Отключаем тест (например, чтобы исправить его в когда-нибудь в будущем)
 ...
 Пишем что-то в файл
+.\01_JUnit\src\test\java\TestCalc.java
+
+.\02_JUnit3\pom.xml
+
+.\02_JUnit3\src\main\java\StringUtils.java
+
+.\02_JUnit3\src\test\java\JUnit3Demo.java
+
 @After
 ...
+.\03_JavaInnerClasses\README.md
+
 
 Внутренние классы Java
 ======================
@@ -210,6 +248,12 @@ gradle
  * Статический внутренний класс (с ключевым словом static)
  * Внутренние классы - объявляются внутри основного класса (без слова static)
  * Анонимные (безымянные) классы - объявляются внутри методов основного класса
+
+.\03_JavaInnerClasses\pom.xml
+
+.\03_JavaInnerClasses\src\main\java\OutClass2.java
+
+.\03_JavaInnerClasses\src\main\java\OuterClass.java
 
 Вложенные классы в Java
 -----------------------
@@ -224,6 +268,8 @@ int getOuterField() {
 return OuterClass.this.outerField; // Эта строка кода - ошибка компиляции
 }
 LocalInnerClass inner; // Ошибка компиляции: локальные классы тут не видны
+.\03_JavaInnerClasses\src\test\java\InnerClassTest.java
+
 Анонимный класс
 ``` java
         MyInterface myInterface = new MyInterface() {
@@ -235,6 +281,8 @@ LocalInnerClass inner; // Ошибка компиляции: локальные 
 
         myInterface.myMethod();
 ```
+.\04_JSP\README.md
+
 
 Tomcat
 ======
@@ -245,27 +293,99 @@ Tomcat
 
 
 
+.\04_JSP\pom.xml
+
+.\06_maven\pom.xml
+
+.\06_maven\src\main\java\MyForm.java
+
+.\DivisionApplet\src\DivisionApplet.java
+
+.\FxHelloStageOnTop\src\hellostageontop\HelloStageOnTop.java
+
+.\Logic\src\com\company\Main.java
+
 Перебор (тупая проверка)
 Проверка условий
 Вывод решения
 Динамика по количеству переменных
 3 переменных
+.\MavenScrumToys\pom.xml
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\model\entities\AbstractEntity.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\model\entities\PersistentEntity.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\model\entities\Project.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\model\entities\Sprint.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\model\entities\SprintNameUniquenessConstraint.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\model\entities\SprintNameUniquenessConstraintValidator.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\model\entities\Story.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\model\entities\Task.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\model\entities\TaskStatus.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\web\controller\AbstractManager.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\web\controller\DashboardManager.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\web\controller\ManagerException.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\web\controller\ProjectManager.java
+
 Using implicity navigation, this request come from /projects/show.xhtml and directs to /project/edit.xhtml
 Using implicity navigation, this request come from /projects/show.xhtml and directs to /project/show.xhtml
 could be null instead
 Implicity navigation, this request come from /projects/edit.xhtml and directs to /project/show.xhtml
 Implicity navigation, this request come from /projects/show.xhtml and directs to /project/showSprints.xhtml
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\web\controller\SkinManager.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\web\controller\SkinUrlManager.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\web\controller\SkinValuesManager.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\web\controller\SprintManager.java
+
 Verify if the currentProject is out of date
 If there is a new CurrentProject we need to update sprintList and set currentSprint to null and tell user he/she needs to select a Sprint
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\web\controller\StoryManager.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\web\controller\TaskManager.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\web\event\CurrentProjectChangeEvent.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\web\event\CurrentSprintChangeEvent.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\web\event\CurrentStoryChangeEvent.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\web\event\CurrentTaskChangeEvent.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\web\helper\ProjectConverter.java
+
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\web\scope\TaskScope.java
+
 will call the postConstruct method.
 will call the preDestroy method.
+.\MavenScrumToys\src\main\java\jsf2\demo\scrum\web\scope\TaskScopeResolver.java
+
 looking for bean in scope already created.
 looking for custom scope in the session
 if doesn't exists create and put it in the session
 looking for mbean in taskScope
 remove scope from the session
+.\SplayTree\pom.xml
+
+.\SplayTree\src\main\java\Main.java
+
 System.out.println("Leave counts :" + impl.leafCount(impl.getRoot(12)));
 System.out.println("Leave counts :" + impl.leafSum(impl.getRoot(24)));
+.\SplayTree\src\main\java\SplayTreeMap.java
+
 Left child rotate
 Right child rotate
 adjustTree function to perform rotations and zig - zig, zig-zag operations.
@@ -286,12 +406,40 @@ Get the current root of the tree.
 preorder traversal of the tree.
 count the leaf in tree.
 count leaf sum
+.\SplayTree\src\main\java\SplayTreeMapTest.java
+
 Удаляем элемент 6
 Удаляем элемент 4
 Удаляем элемент 5
+.\Swing\pom.xml
+
+.\Swing\src\main\java\Main.java
+
+.\Swing\src\main\java\MainForm.java
+
 Получаем из интерфейса логин
 String login = textField1.getText();
 Получаем из интерфейса пароль
 char[] password = passwordField1.getPassword();
+.\Swing\src\main\java\OfficerPanel.java
+
+.\WebViewBrowser\pom.xml
+
+.\WebViewBrowser\src\main\java\webviewbrowser\WebViewBrowser.java
+
+.\XO_Game\pom.xml
+
+.\XO_Game\src\main\java\com\demo\Main.java
+
 write your code here
+.\XO_Game\src\main\java\com\demo\MainWindow.java
+
+.\javafx\FXML\pom.xml
+
+.\javafx\FXML\src\main\java\fxml\FXML.java
+
+.\javafx\FXML\src\main\java\fxml\SampleController.java
+
 TODO
+.\pom.xml
+

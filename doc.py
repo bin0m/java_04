@@ -68,13 +68,14 @@ for root, dirs, files in os.walk("."):
 
 for file_name in sorted(all_files):
     # Markdown файлы просто передаём на выход не меняя
+    print(file_name)
+    print()
     if get_extension(file_name).lower() == ".md":
         print()
         for line in open(file_name, 'r', encoding="utf-8"):
             print(line.rstrip())
         print()
         continue
-    # print(file_name)
     parse(file_name)
 
 
