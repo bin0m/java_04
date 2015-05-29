@@ -16,3 +16,7 @@ hs_err_pid*
 # maven target
 target
 out
+
+# Idea projects
+.idea
+*.iml

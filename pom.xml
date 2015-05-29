@@ -1,23 +1,26 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                              http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>java</groupId>
-    <artifactId>lesson_04</artifactId>
+    <groupId>levelp</groupId>
+    <artifactId>java_04</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
     <name>Java Junior Developer 4</name>
 
     <modules>
-        <module>01_JUnit</module>
-        <module>02_JUnit3</module>
-        <module>03_JavaInnerClasses</module>
+        <module>01_Assert</module>
+        <module>02_Annotations</module>
+        <module>03_JUnitAnnotations</module>
+        <module>04_JUnit3</module>
+        <module>05_JavaInnerClasses</module>
+        <module>06_Collections</module>
+        <module>07_maven</module>
+        <module>08_DateTime</module>
         <module>04_JSP</module>
-        <module>06_maven</module>
         <module>WebViewBrowser</module>
-        <module>00_Annotations</module>
     </modules>
 
     <build>
@@ -27,8 +30,8 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <configuration>
-                        <source>1.5</source>
-                        <target>1.5</target>
+                        <source>1.8</source>
+                        <target>1.8</target>
                     </configuration>
                 </plugin>
             </plugins>
