@@ -45,11 +45,9 @@ public class Treap {
         if (R == null) return L;
 
         if (L.y > R.y) {
-            Treap newR = Merge(L.Right, R);
-            return new Treap(L.x, L.y, L.Left, newR);
+            return new Treap(L.x, L.y, L.Left, Merge(L.Right, R));
         } else {
-            Treap newL = Merge(L, R.Left);
-            return new Treap(R.x, R.y, newL, R.Right);
+            return new Treap(R.x, R.y, Merge(L, R.Left), R.Right);
         }
     }
 
