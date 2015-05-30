@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>java_04</groupId>
-    <artifactId>03_JavaInnerClass</artifactId>
+    <artifactId>05_JavaInnerClasses</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>

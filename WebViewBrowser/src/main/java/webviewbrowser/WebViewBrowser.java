@@ -18,7 +18,7 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 import java.util.List;
- 
+
 /**
  * Demonstrates a WebView object accessing a web page.
  *
@@ -26,8 +26,9 @@ import java.util.List;
  * @see javafx.scene.web.WebEngine
  */
 public class WebViewBrowser extends Application {
- 
-    @Override public void start(Stage primaryStage) throws Exception {
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
         Pane root = new WebViewPane();
         primaryStage.setTitle("Браузер на основе JavaFX");
         primaryStage.setScene(new Scene(root, 1024, 768));
@@ -36,10 +37,11 @@ public class WebViewBrowser extends Application {
 
 
     /**
-     * The main() method is ignored in correctly deployed JavaFX 
-     * application. main() serves only as fallback in case the 
+     * The main() method is ignored in correctly deployed JavaFX
+     * application. main() serves only as fallback in case the
      * application can not be launched through deployment artifacts,
      * e.g., in IDEs with limited FX support. NetBeans ignores main().
+     *
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -66,7 +68,8 @@ public class WebViewBrowser extends Application {
             Button goButton = new Button("Go");
             goButton.setDefaultButton(true);
             EventHandler<ActionEvent> goAction = new EventHandler<ActionEvent>() {
-                @Override public void handle(ActionEvent event) {
+                @Override
+                public void handle(ActionEvent event) {
                     eng.load(locationField.getText().startsWith("http://") ? locationField.getText() :
                             "http://" + locationField.getText());
                 }
@@ -74,7 +77,8 @@ public class WebViewBrowser extends Application {
             goButton.setOnAction(goAction);
             locationField.setOnAction(goAction);
             eng.locationProperty().addListener(new ChangeListener<String>() {
-                @Override public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                @Override
+                public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
                     locationField.setText(newValue);
                 }
             });
@@ -82,7 +86,7 @@ public class WebViewBrowser extends Application {
             grid.setVgap(5);
             grid.setHgap(5);
             GridPane.setConstraints(locationField, 0, 0, 1, 1, HPos.CENTER, VPos.CENTER, Priority.ALWAYS, Priority.SOMETIMES);
-            GridPane.setConstraints(goButton,1,0);
+            GridPane.setConstraints(goButton, 1, 0);
             GridPane.setConstraints(view, 0, 1, 2, 1, HPos.CENTER, VPos.CENTER, Priority.ALWAYS, Priority.ALWAYS);
             grid.getColumnConstraints().addAll(
                     new ColumnConstraints(100, 100, Double.MAX_VALUE, Priority.ALWAYS, HPos.CENTER, true),
@@ -92,7 +96,8 @@ public class WebViewBrowser extends Application {
             getChildren().add(grid);
         }
 
-        @Override protected void layoutChildren() {
+        @Override
+        protected void layoutChildren() {
             List<Node> managed = getManagedChildren();
             double width = getWidth();
             double height = getHeight();
@@ -103,8 +108,8 @@ public class WebViewBrowser extends Application {
             for (int i = 0; i < managed.size(); i++) {
                 Node child = managed.get(i);
                 layoutInArea(child, left, top,
-                               width - left - right, height - top - bottom,
-                               0, Insets.EMPTY, true, true, HPos.CENTER, VPos.CENTER);
+                        width - left - right, height - top - bottom,
+                        0, Insets.EMPTY, true, true, HPos.CENTER, VPos.CENTER);
             }
         }
     }

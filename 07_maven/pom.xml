@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>levelup</groupId>
-    <artifactId>06_maven2</artifactId>
+    <artifactId>07_maven</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
