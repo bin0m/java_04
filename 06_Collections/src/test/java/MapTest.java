@@ -1,4 +1,5 @@
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -10,7 +11,7 @@ import java.util.TreeMap;
  */
 public class MapTest extends Assert {
 
-    static Map<Class, Class> types = new TreeMap<Class, Class>();
+    static Map<Class, Class> types = new TreeMap<>();
 
     static {
         types.put(Byte.TYPE, Byte.class);
@@ -24,8 +25,9 @@ public class MapTest extends Assert {
     }
 
     @Test
+    @Ignore
     public void testMapOperations() {
-        Map<String, String> map = new HashMap<String, String>();
+        Map<String, String> map = new HashMap<>();
 
         assertTrue("Список пуст", map.isEmpty());
 

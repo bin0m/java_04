@@ -31,11 +31,5 @@
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
-
-        <dependency>
-            <groupId>de.sciss</groupId>
-            <artifactId>weblaf</artifactId>
-            <version>1.28</version>
-        </dependency>
     </dependencies>
 </project>

@@ -12,6 +12,14 @@ public class JUnit3Demo extends TestCase {
 
     private final Map toHexStringData = new HashMap();
 
+    protected static void setUpClass() {
+        System.out.println("JUnit3Demo.setUpClass");
+    }
+
+    protected static void tearDownClass() {
+        System.out.println("JUnit3Demo.tearDownClass");
+    }
+
     public void testIsEmpty() {
         boolean actual = StringUtils.isEmpty(null);
         assertTrue(actual);
@@ -26,7 +34,7 @@ public class JUnit3Demo extends TestCase {
         assertFalse(actual);
     }
 
-    //@After
+    //@Before
     protected void setUp() throws Exception {
         toHexStringData.put("", new byte[0]);
         toHexStringData.put("01020d112d7f", new byte[]{1, 2, 13, 17, 45, 127});
@@ -34,6 +42,7 @@ public class JUnit3Demo extends TestCase {
         //...
     }
 
+    //@After
     protected void tearDown() throws Exception {
         toHexStringData.clear();
     }

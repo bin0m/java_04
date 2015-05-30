@@ -1,3 +1,4 @@
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.*;
@@ -28,6 +29,7 @@ public class SetTest {
      * Основные операции на множествах
      */
     @Test
+    @Ignore
     public void sets() {
         Set<Integer> intSet = new TreeSet<Integer>();
         intSet = new HashSet<Integer>();

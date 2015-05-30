@@ -1,3 +1,4 @@
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.*;
@@ -16,12 +17,15 @@ public class ListTest {
     }
 
     @Test
+    @Ignore
     public void oldList() {
-        List<Object> list = new ArrayList<>();
+        List list = new ArrayList();
         list.add(2);
         list.add("Test");
         list.add(2.3);
         list.add(new MyClass(1));
+
+        MyClass var1 = (MyClass) list.get(0);
 
         assertEquals(4, list.size());
         for (int i = 0; i < list.size(); ++i)

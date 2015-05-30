@@ -16,7 +16,7 @@ public class OuterClass {
     }
 
     /**
-     * 3. Локальные классы - внутри методов основного класса.
+     * 1. Локальные классы - внутри методов основного класса.
      * Могут быть использованы только внутри этих методов.
      * Имеют доступ к членам внешнего класса.
      * Имеют доступ как к локальным переменным,
@@ -32,6 +32,8 @@ public class OuterClass {
         final int value = 10;
 
         class LocalInnerClass {
+            int localField = 2;
+
             int getOuterField() {
                 return OuterClass.this.outerField; // Эта линия кода синтаксически корректна
             }
@@ -52,10 +54,13 @@ public class OuterClass {
 
         LocalInnerClass localInnerClass = new LocalInnerClass();
         localInnerClass.m();
+
+        LocalInnerClass aClass = new LocalInnerClass();
+        aClass.m();
     }
 
     /**
-     * Анонимные (безымянные) классы - объявляются внутри методов основного класса.
+     * 2. Анонимные (безымянные) классы - объявляются внутри методов основного класса.
      * Могут быть использованы только внутри этих методов.
      * В отличие от локальных классов, анонимные классы не имеют названия.
      * Главное требование к анонимному классу -
@@ -69,6 +74,8 @@ public class OuterClass {
         // интерфейс ActionListener
         final int localVar = 2;
         ActionListener listener = new ActionListener() {
+            int myField = 10;
+
             @Override
             public void actionPerformed(java.awt.event.ActionEvent actionEvent) {
                 System.out.println("localVar = " + localVar);
@@ -81,7 +88,7 @@ public class OuterClass {
     }
 
     /**
-     * 1. Статический внутренний класс (с ключевым словом static):
+     * 3. Статический внутренний класс (с ключевым словом static):
      * Не имеет доступа к членам внешнего класса за исключением статических.
      * Может содержать статические поля, методы и классы, в отличие от других типов внутренних классов.
      */
@@ -106,7 +113,7 @@ public class OuterClass {
     // LocalInnerClass inner; // Ошибка компиляции: локальные классы тут не видны
 
     /**
-     * 2. Внутренние классы - объявляются внутри основного класса (без слова static).
+     * 4. Внутренние классы - объявляются внутри основного класса (без слова static).
      * В отличие от статических внутренних классов,
      * имеют доступ к членам внешнего класса.
      * Не могут содержать (но могут наследовать) определение

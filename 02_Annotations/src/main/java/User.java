@@ -8,7 +8,7 @@ public class User {
     @Column("id")
     public int id;
 
-    @Column(value = "name", maxLen = 20, isPassword = false)
+    @Column(value = "NAME_STR", maxLen = 20, isPassword = false)
     public String name;
 
     @Column(value = "password", isPassword = true)
