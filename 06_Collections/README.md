@@ -1,11 +1,12 @@
 <!-- doc.py -->
 ``` java
+
 /**
  * Бинарное дерево поиска
  * Левый наследник всегда меньше правого.
  * Для балансировки: CartesianTree? Декартово дерево поиска?
  */
-public class BinaryTree<T extends Comparable> implements SearchTree<T> {
+public class BinaryTree<T extends Comparable<T>> implements SearchTree<T> {
     /**
      * Корневой элемент дерева
      */
@@ -117,9 +118,16 @@ else
 result = 1;
 [src/main/java/BinaryTreeNode.java](src/main/java/BinaryTreeNode.java)
 
-TODO: join + split
 здесь будут операции...
 [src/main/java/Treap.java](src/main/java/Treap.java)
+
+Если список пуст
+Если список не пуст
+Добавляем элемент в конец списка
+Теперь новый элемент - последний
+Если удаляем последний элемент,
+то двигаем хвост назад
+[src/main/java/list/MyList.java](src/main/java/list/MyList.java)
 
 Интерфейс =  Класс с реализацией этого интерфейса
 Добавить новое значение
@@ -128,7 +136,7 @@ TODO: join + split
 Проверочный set
 ``` java
         // Интерфейс =  Класс с реализацией этого интерфейса
-        BinaryTreeNode<Integer> tree = new BinaryTreeNode<Integer>();
+        BinaryTreeNode<Integer> tree = new BinaryTreeNode<>();
         assertFalse(tree.find(3));
         tree.add(3);
         assertTrue(tree.find(3));
