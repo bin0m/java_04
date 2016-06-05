@@ -21,6 +21,7 @@
         <module>04_JSP</module>
         <module>WebViewBrowser</module>
         <module>Swing</module>
+        <module>javafx</module>
         <module>SplayTree</module>
     </modules>
 

@@ -3,7 +3,7 @@
 <!-- some examples of how to customize the build. -->
 <!-- (If you delete it and reopen the project it will be recreated.) -->
 <!-- By default, only the Clean and Build commands use this build script. -->
-<project name="FXML" default="default" basedir="." xmlns:fx="javafx:com.sun.javafx.tools.ant">
+<project name="FXML" default="default" basedir="FXML">
     <description>Builds, tests, and runs the project FXML.</description>
     <import file="nbproject/build-impl.xml"/>
     <!--
